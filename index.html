@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
+<title>index2</title>
+
+<!-- 부트스트랩 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<!-- Custom CSS -->
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:600,900" rel="stylesheet">
+
+<style type="text/css">
+  html,body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+  }
+  .row {
+    width: 100%;
+  }
+</style>
+</head>
+<body data-spy="scroll" data-target=".navbar-example">
+<nav>
+  <div class="navbar-example" style="position: fixed; top: 40%; left: 1%; z-index: 20">
+    <ul class="nav nav-pills nav-stacked" role="tablist">
+      <li class="active"><a href="#card">Card</a></li>
+      <li><a href="#2016">2016</a></li>
+      <li><a href="#2017">2017</a></li>
+      <li><a href="#2018">2018</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <!-- card -->
+  <div class="row" id="card" style="display: flex; flex-direction: column; justify-content: center; background-color: black; padding-bottom: 15rem;">
+    <div class="card-wrapper" style="width: 300px; height: 500px; position: relative; margin: 10rem auto">
+      <div class="front" style="background-color: red; width: 100%; height: 100%; position: absolute; z-index: 2">
+        <!-- front content -->
+      </div>
+      <div class="back" style="background-color: blue; width: 100%; height: 100%; position: absolute;">
+        <!-- back content -->
+      </div>
+    </div>
+    <a class="btn-flip" style="margin: 0 auto;">Click to FLIP</a>
+  </div>
+
+  <!-- 2016 -->
+  <div class="row" id="2016" style="background-color: black; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+    <section class="large-text" style="padding-bottom: 100px; font-size: 4rem; color: white; margin: 0 auto; width: 70%;">
+      <p>
+        <strong style="font-size: 6rem; font-weight: 900">2016 <br> BAUMBERGER’S LETTERING</strong> <br><br>
+        GT Walsheim is inspired by the poster lettering of Otto Baumberger (1889–1961). He was a Swiss painter, stage designer, lithographer, and poster artist who created over 200 posters during his career. This website introduces the refreshed GT Walsheim typeface family and highlights Baumberger’s beautiful poster designs.
+      </p>
+    </section>
+    <section class="gallery" style="display: flex; width: 69%; height: 50%; margin: 0 auto; padding-bottom: 10rem; justify-content: space-between;">
+        <div style="width: 30%; height: 33.3%;">
+          <img src="images/zurich.jpg" style="width: 100%; height: 100%; padding-bottom: 2rem;">
+          <p style="border-bottom: 1px solid white; color: white; font-size: 2rem; text-align: left; padding-bottom: 2rem;">
+            Zürich Metropolis </br>
+            1929 • 100×64cm
+          </p>
+        </div>
+        <div style="width: 30%; height: 33.3%;">
+          <img src="images/k_wein.gif" style="width: 100%; height: 100%; padding-bottom: 2rem;">
+          <p style="border-bottom: 1px solid white; color: white; font-size: 2rem; text-align: left; padding-bottom: 2rem;">
+            Zürich Metropolis </br>
+            1929 • 100×64cm
+          </p>  
+        </div>
+        <div style="width: 30%; height: 33.3%;">
+          <img src="images/k_schiff.gif" style="width: 100%; height: 100%; padding-bottom: 2rem;">
+          <p style="border-bottom: 1px solid white; color: white; font-size: 2rem; text-align: left; padding-bottom: 2rem;">
+            Zürich Metropolis </br>
+            1929 • 100×64cm
+          </p>
+        </div>
+      </section>
+  </div>
+
+  <!-- 2017 -->
+  <div class="row" id="2017" style="background-color: black; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+    <section class="large-text" style="padding-bottom: 100px; font-size: 4rem; color: white; margin: 0 auto; width: 70%;">
+      <p>
+        <strong style="font-size: 6rem; font-weight: 900">2017 <br> BAUMBERGER’S LETTERING</strong> <br><br>
+        His work is fascinating for many reasons. Like most designers of his time, Baumberger created a lot of tourism posters with the Swiss Alps in the starring role. His career was marked by the ascendancy of branding and consumer products in society.
+        At times Baumberger’s work leaves the aesthetics of landscape painting behind for a more abstract, geometric look that was so characteristic of the later Swiss Style. All those posters have in common that they allow Baumberger’s geometric lettering to take center stage.
+      </p>
+    </section>
+    <section class="gallery" style="display: flex; width: 69%; height: 50%; margin: 0 auto; padding-bottom: 10rem; justify-content: space-between;">
+        <div style="width: 30%; height: 33.3%;">
+          <img src="images/forster.jpg" style="width: 100%; height: 100%; padding-bottom: 2rem;">
+          <p style="border-bottom: 1px solid white; color: white; font-size: 2rem; text-align: left; padding-bottom: 2rem;">
+            Zürich Metropolis </br>
+            1929 • 100×64cm
+          </p>
+        </div>
+        <div style="width: 30%; height: 33.3%;">
+          <img src="images/balatum.jpg" style="width: 100%; height: 100%; padding-bottom: 2rem;">
+          <p style="border-bottom: 1px solid white; color: white; font-size: 2rem; text-align: left; padding-bottom: 2rem;">
+            Zürich Metropolis </br>
+            1929 • 100×64cm
+          </p>  
+        </div>
+        <div style="width: 30%; height: 33.3%;">
+          <img src="images/k_forster.gif" style="width: 100%; height: 100%; padding-bottom: 2rem;">
+          <p style="border-bottom: 1px solid white; color: white; font-size: 2rem; text-align: left; padding-bottom: 2rem;">
+            Zürich Metropolis </br>
+            1929 • 100×64cm
+          </p>
+        </div>
+      </section>
+  </div>
+
+  <!-- 2018 -->
+  <div class="row" id="2018" style="background-color: black; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+    <section class="large-text" style="padding-bottom: 100px; font-size: 4rem; color: white; margin: 0 auto; width: 70%;">
+      <p>
+        <strong style="font-size: 6rem; font-weight: 900">2018 <br> BAUMBERGER’S LETTERING</strong> <br><br>
+        Baumberger’s eye for type was what captured our interest in his posters. As lithography posters were drawn by hand, his type was always lettered by hand as well. But he saw himself more as an artist then as a lettering expert.
+      </p>
+    </section>
+    <section class="gallery" style="display: flex; width: 69%; height: 50%; margin: 0 auto; padding-bottom: 10rem; justify-content: space-between;">
+        <div style="width: 30%; height: 33.3%;">
+          <img src="images/brandmeldung.jpg" style="width: 100%; height: 100%; padding-bottom: 2rem;">
+          <p style="border-bottom: 1px solid white; color: white; font-size: 2rem; text-align: left; padding-bottom: 2rem;">
+            Zürich Metropolis </br>
+            1929 • 100×64cm
+          </p>
+        </div>
+        <div style="width: 30%; height: 33.3%;">
+          <img src="images/alpenbuch.jpg" style="width: 100%; height: 100%; padding-bottom: 2rem;">
+          <p style="border-bottom: 1px solid white; color: white; font-size: 2rem; text-align: left; padding-bottom: 2rem;">
+            Zürich Metropolis </br>
+            1929 • 100×64cm
+          </p>  
+        </div>
+        <div style="width: 30%; height: 33.3%;">
+          <img src="images/hoellgrotten.jpg" style="width: 100%; height: 100%; padding-bottom: 2rem;">
+          <p style="border-bottom: 1px solid white; color: white; font-size: 2rem; text-align: left; padding-bottom: 2rem;">
+            Zürich Metropolis </br>
+            1929 • 100×64cm
+          </p>
+        </div>
+      </section>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+<script type="text/javascript">
+  $(".card-wrapper").flip({
+    trigger: "manual"
+  });
+
+  $(document).on('click', '.btn-flip', function(){
+    $(".card-wrapper").flip(true);
+    $('.btn-flip').text('Click to UNFLIP').removeClass('btn-flip').addClass('btn-unflip');
+  });
+
+  $(document).on('click', '.btn-unflip', function(){
+    $(".card-wrapper").flip(false);
+    $('.btn-unflip').text('Click to FLIP').removeClass('btn-unflip').addClass('btn-flip');
+  });
+</script>
+</body>
+</html>
