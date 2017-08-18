@@ -61,7 +61,7 @@ strong {
 }
 
 .responsive-nav-showButton-show {
-    position: fixed;
+    position: absolute;
     right: 2rem;
     top: 4rem;
     font-size: 3.5rem;
