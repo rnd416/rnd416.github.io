@@ -93,7 +93,7 @@ strong {
 }
 .hamburger {
     position: absolute;
-    right: 4rem;
+    right: 2rem;
     top: 4rem;
     font-size: 3.5rem;
     z-index: 100;
@@ -108,7 +108,7 @@ strong {
     height: 700px; 
     position: relative; 
     margin: 0 auto;
-    margin-top: 8rem;
+    margin-top: 11rem;
     text-align: center;
 
 }
