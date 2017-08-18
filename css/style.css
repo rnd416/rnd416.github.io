@@ -90,6 +90,7 @@ strong {
     justify-content: center; 
     background-color: black; 
     width: 100%;
+    color: black;
 }
 .hamburger {
     position: absolute;
@@ -98,9 +99,10 @@ strong {
     font-size: 3.5rem;
     z-index: 100;
 }
-.glyphicon {
+.glyphicon.glyphicon-barcode {
     color: white;
 }
+
 .card-wrapper {
     display: flex;
     flex-direction: column;
@@ -145,7 +147,7 @@ strong {
 }
 .btn {
     color: black;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 .btn.unflip {
     margin-top: 395px;
@@ -158,16 +160,16 @@ strong {
 .name {
     font-family: 'Lato', sans-serif;
     margin-bottom: 2rem;
-    font-weight: 300;
 }
 
 .job {
+    font-family: 'Lato', sans-serif;
     margin-bottom: 1rem;    
 }
 
 .deco {
     position: relative;
-    font-family: 'Linden Hill', serif;
+    font-family: 'Cardo', serif;
     line-height: 23px;
     margin-top: 7rem;
 }
