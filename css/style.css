@@ -70,7 +70,7 @@ strong {
     position: fixed;
     visibility: hidden;
 }
-.glyphicon.glyphicon-barcode {
+.glyphicon {
     color: white;
 }
 
@@ -96,9 +96,6 @@ strong {
     font-size: 3.5rem;
 }
 
-.glyphicon.glyphicon-remove {
-    color: white;
-}
 .responsive-nav ul {
     list-style-type: none;
     margin: 0;
