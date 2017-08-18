@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
-<title>index2</title>
+<title>RnD, Software Engineer</title>
 
 <!-- 부트스트랩 -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
@@ -30,9 +30,15 @@
   </div>
 </nav>
 
+<!-- mobile mav -->
+<a href="#" class="hamburger visible-xs-inline-block">
+  <span class="glyphicon glyphicon-barcode" aria-hidden="true"></span>
+</a>
+
 <div class="container">
   <!-- card -->
   <div class="row card" id="card">
+    
     <div class="card-wrapper">
       <div class="front">
         <img src="images/profile.jpeg" class="profile">
@@ -87,6 +93,10 @@
   </div>
 
   <!-- 2017 -->
+  <!-- <div class="seventeen-celebrate">
+    
+  </div> -->
+  
   <div class="row seventeen" id="seventeen">
     <section class="large-text">
       <p>
@@ -117,9 +127,19 @@
             1929 • 100×64cm
           </p>
         </div>
+        <div class="gallery-item">
+          <img src="images/k_brak.gif" class="img-responsive">
+          <p class="gallery-item-caption">
+            Zürich Metropolis </br>
+            1929 • 100×64cm
+          </p>
+        </div>
       </section>
   </div>
-
+  
+  <!-- <div class="eighteen-celebrate">
+    <h1 style="color: white; line-height: 100vh; font-size: 50rem; font-family: 'Montserrat', sans-serif; margin: 0;" class="content">2018</h1>
+  </div> -->
   <!-- 2018 -->
   <div class="row eighteen" id="eighteen">
     <section class="large-text">
@@ -166,11 +186,23 @@
     $(".card-wrapper").flip(true);
     $('.btn.flip').removeClass('btn flip').addClass('btn unflip');
   });
+  $(document).on('scrollLeft', function() {
+    $(".card-wrapper").flip(true);
+  })
 
   $(document).on('click', '.btn.unflip', function(){
     $(".card-wrapper").flip(false);
     $('.btn.unflip').removeClass('btn unflip').addClass('btn flip');
   });
+
+  jQuery(function($) {
+    $('#seventeen').on('scroll', function() {
+      if($(this).scrollTop() + $(this).innerHeight() >= $(this)[0].scrollHeight) {
+          alert('end reached');
+      }
+    })
+  });
+
 </script>
 </body>
 </html>
