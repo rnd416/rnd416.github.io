@@ -169,9 +169,11 @@ strong {
 
 .deco {
     position: relative;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Crimson Text', serif;
     line-height: 23px;
     margin-top: 7rem;
+    font-style: italic;
+    font-size: 1.3rem;
 }
 
 /*iphone 6*/
