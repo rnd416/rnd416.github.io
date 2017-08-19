@@ -215,6 +215,11 @@ strong {
     right: 1rem;
     top: 1rem;
 }
+@media (max-width: 767px) {
+    .btn {
+        position: absolute;
+    }
+}
 .glyphicon {
     color: gray;
 }
