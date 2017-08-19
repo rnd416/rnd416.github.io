@@ -211,9 +211,12 @@ strong {
 .btn {
     color: gray;
     font-size: 2.5rem;
-    position: absolute;
+    position: fixed;
     right: 1rem;
     top: 1rem;
+}
+.glyphicon {
+    color: gray;
 }
 .profile {
     margin-top: 50px;
