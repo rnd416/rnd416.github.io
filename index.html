@@ -54,7 +54,7 @@
     <div class="card-wrapper">
       <div class="front">
         <img src="images/profile.jpeg" class="profile">
-        <h1 class="name" style="text-transform: capitalize;">S a i n t <br> P a t r i c k</h1>
+        <h1 class="name" style="text-transform: capitalize;">S a i n t<br>P a t r i c k</h1>
         <h4 class="job">
 
         </h4>
@@ -62,10 +62,10 @@
           <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
         </a>
         <h4 class="deco">
-          Donglas K. Larson. D.D.S <br>
-          4415 Moorpark Avenue <br>
-          Suite 13 <br>
-          Sam Jose, CA 95117 <br>
+          Donglas K. Larson. D.D.S<br>
+          4415 Moorpark Avenue<br>
+          Suite 13<br>
+          Sam Jose, CA 95117<br>
           (408) 249.3070 
         </h4>
       </div>
@@ -81,7 +81,7 @@
   <div class="row sixteen" id="sixteen">
     <section class="large-text">
       <p>
-        <strong>2016 <br> BAUMBERGER’S LETTERING</strong> <br><br>
+        <strong>2016<br> BAUMBERGER’S LETTERING</strong><br><br>
         GT Walsheim is inspired by the poster lettering of Otto Baumberger (1889–1961). He was a Swiss painter, stage designer, lithographer, and poster artist who created over 200 posters during his career. This website introduces the refreshed GT Walsheim typeface family and highlights Baumberger’s beautiful poster designs.
       </p>
     </section>
@@ -89,21 +89,21 @@
         <div class="gallery-item">
           <img src="images/zurich.jpg" class="img-responsive">
           <p class="gallery-item-caption">
-            Zürich Metropolis </br>
+            Zürich Metropolis</br>
             1929 • 100×64cm
           </p>
         </div>
         <div class="gallery-item">
           <img src="images/bruenig-2.jpg" class="img-responsive">
           <p class="gallery-item-caption">
-            Zürich Metropolis </br>
+            Zürich Metropolis</br>
             1929 • 100×64cm
           </p>  
         </div>
         <div class="gallery-item">
           <img src="images/k_schiff.gif" class="img-responsive">
           <p class="gallery-item-caption">
-            Zürich Metropolis </br>
+            Zürich Metropolis</br>
             1929 • 100×64cm
           </p>
         </div>
@@ -118,7 +118,7 @@
   <div class="row seventeen" id="seventeen">
     <section class="large-text">
       <p>
-        <strong>2017 <br> OSCURE LAUNCED</strong> <br><br>
+        <strong>2017<br>OSCURE LAUNCED</strong><br><br>
         His work is fascinating for many reasons. Like most designers of his time, Baumberger created a lot of tourism posters with the Swiss Alps in the starring role. His career was marked by the ascendancy of branding and consumer products in society.
         At times Baumberger’s work leaves the aesthetics of landscape painting behind for a more abstract, geometric look that was so characteristic of the later Swiss Style. All those posters have in common that they allow Baumberger’s geometric lettering to take center stage.
       </p>
@@ -127,28 +127,28 @@
         <div class="gallery-item">
           <img src="images/forster.jpg" class="img-responsive">
           <p class="gallery-item-caption">
-            Zürich Metropolis </br>
+            Zürich Metropolis</br>
             1929 • 100×64cm
           </p>
         </div>
         <div class="gallery-item">
           <img src="images/balatum.jpg" class="img-responsive">
           <p class="gallery-item-caption">
-            Zürich Metropolis </br>
+            Zürich Metropolis</br>
             1929 • 100×64cm
           </p>  
         </div>
         <div class="gallery-item">
           <img src="images/k_forster.gif" class="img-responsive">
           <p class="gallery-item-caption">
-            Zürich Metropolis </br>
+            Zürich Metropolis</br>
             1929 • 100×64cm
           </p>
         </div>
         <div class="gallery-item">
           <img src="images/k_brak.gif" class="img-responsive">
           <p class="gallery-item-caption">
-            Zürich Metropolis </br>
+            Zürich Metropolis</br>
             1929 • 100×64cm
           </p>
         </div>
@@ -162,7 +162,7 @@
   <div class="row eighteen" id="eighteen">
     <section class="large-text">
       <p>
-        <strong>2018 <br> BLUE CIRCLE</strong> <br><br>
+        <strong>2018<br>BLUE CIRCLE</strong><br><br>
         Blue Circle’s eye for type was what captured our interest in his posters. As lithography posters were drawn by hand, his type was always lettered by hand as well. But he saw himself more as an artist then as a lettering expert.
       </p>
     </section>
@@ -170,21 +170,21 @@
         <div class="gallery-item">
           <img src="images/brandmeldung.jpg" class="img-responsive">
           <p class="gallery-item-caption">
-            Zürich Metropolis </br>
+            Zürich Metropolis</br>
             1929 • 100×64cm
           </p>
         </div>
         <div class="gallery-item">
           <img src="images/alpenbuch.jpg" class="img-responsive">
           <p class="gallery-item-caption">
-            Zürich Metropolis </br>
+            Zürich Metropolis</br>
             1929 • 100×64cm
           </p>  
         </div>
         <div class="gallery-item">
           <img src="images/hoellgrotten.jpg" class="img-responsive">
           <p class="gallery-item-caption">
-            Zürich Metropolis </br>
+            Zürich Metropolis</br>
             1929 • 100×64cm
           </p>
         </div>
@@ -222,6 +222,19 @@
     $('.responsive-nav-show').removeClass('responsive-nav-show').addClass('responsive-nav-hidden');
     $('.responsive-nav-showButton-hidden').removeClass('responsive-nav-showButton-hidden').addClass('responsive-nav-showButton-show');
   });
+
+  // 데스크탑 크롬 .btn 디버그 
+  var agent = navigator.userAgent.toLowerCase();
+  var filter = "win16|win32|win64|mac|macintel";
+  
+  
+  if( filter.indexOf(navigator.platform.toLowerCase())>0 ){
+      if (agent.indexOf("chrome") != -1) {
+        // alert("PC 크롬 브라우저입니다.");
+        $('.btn').css('position', 'fixed');
+      }
+  }
+  
 </script>
 </body>
 </html>
