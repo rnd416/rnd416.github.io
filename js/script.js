@@ -29,7 +29,6 @@ $(document).on('click', '.responsive-nav-list', function() {
   $('.responsive-nav-showButton-hidden').removeClass('responsive-nav-showButton-hidden').addClass('responsive-nav-showButton-show');
 });
 
-
 var agent = navigator.userAgent.toLowerCase();
 var filter = "win16|win32|win64|mac|macintel";
 if( filter.indexOf(navigator.platform.toLowerCase())>0 ){
@@ -37,3 +36,6 @@ if( filter.indexOf(navigator.platform.toLowerCase())>0 ){
       $('.btn').css('position', 'fixed');
     }
 }
+
+window.sr = ScrollReveal();
+sr.reveal('.row');
