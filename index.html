@@ -4,19 +4,16 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
-<title>RnD, Software Engineer</title>
-<!-- fonts -->
-<link href="https://fonts.googleapis.com/css?family=Montserrat:600,900|Lato:300|Cardo:400i" rel="stylesheet">
-<!-- 부트스트랩 -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-<!-- Custom CSS -->
-<link rel="stylesheet" href="css/style.css" type="text/css">
 
+<title>RnD, Software Engineer</title>
+<link rel="shortcut icon" href="favicon.ico">
+<!-- <link rel="apple-touch-icon" href="favicon.ico"> -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:600,900|Lato:300|Cardo:400i" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
 <body data-spy="scroll" data-target=".navbar-example">
-<!-- nav -->
 <nav>
   <div class="navbar-example hidden-xs">
     <ul class="nav nav-pills nav-stacked" role="tablist">
@@ -28,19 +25,17 @@
   </div>
 </nav>
 
-<!-- responsive nav -->
-
 <a href="#" class="responsive-nav-showButton-show visible-xs-inline-block">
-  <span class="glyphicon glyphicon-menu-hamburger responsive-nav-glyphicon" aria-hidden="true"></span>
+  <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
 </a>
 
 <div class="responsive-nav responsive-nav-hidden visible-xs-inline-block">
   <a href="#" class="responsive-nav-closeButton">
-    <span class="glyphicon glyphicon-remove responsive-nav-glyphicon" aria-hidden="true"></span>
+    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
   </a>
   <ul class="responsive-nav-list">
     <li><a href="#card">CARD</a></li>
-    <li><a href="#">CAREER</a></li>
+    <li><a href="#career">CAREER</a></li>
     <li><a href="#sixteen">2016</a></li>
     <li><a href="#seventeen">2017</a></li>
     <li><a href="#eighteen">2018</a></li>
@@ -49,7 +44,6 @@
 
 
 <div class="container">
-  <!-- card -->
   <div class="row card" id="card">
     <div class="card-wrapper">
       <div class="front">
@@ -77,7 +71,6 @@
     </div>
   </div>
 
-  <!-- 2016 -->
   <div class="row sixteen" id="sixteen">
     <section class="large-text">
       <p>
@@ -108,12 +101,16 @@
           </p>
         </div>
       </section>
+      <section class="gallery-big">
+        <div class="gallery-item">
+          <img src="images/futuremobility.png" class="img-responsive">
+          <p class="gallery-item-caption">
+            Zürich Metropolis</br>
+            1929 • 100×64cm
+          </p>
+        </div>
+      </section>
   </div>
-
-  <!-- 2017 -->
-  <!-- <div class="seventeen-celebrate">
-    
-  </div> -->
   
   <div class="row seventeen" id="seventeen">
     <section class="large-text">
@@ -155,10 +152,6 @@
       </section>
   </div>
   
-  <!-- <div class="eighteen-celebrate">
-    <h1 style="color: white; line-height: 100vh; font-size: 50rem; font-family: 'Montserrat', sans-serif; margin: 0;" class="content">2018</h1>
-  </div> -->
-  <!-- 2018 -->
   <div class="row eighteen" id="eighteen">
     <section class="large-text">
       <p>
@@ -195,46 +188,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
-<script type="text/javascript">
-  $(".card-wrapper").flip({
-    trigger: "manual"
-  });
-
-  $(document).on('click', '.btn.flip', function(){
-    $(".card-wrapper").flip(true);
-    $('.btn.flip').removeClass('btn flip').addClass('btn unflip');
-  });
-  $(document).on('scrollLeft', function() {
-    $(".card-wrapper").flip(true);
-  })
-
-  $(document).on('click', '.btn.unflip', function(){
-    $(".card-wrapper").flip(false);
-    $('.btn.unflip').removeClass('btn unflip').addClass('btn flip');
-  });
-
-  $(document).on('click', '.responsive-nav-showButton-show',function() {
-    $('.responsive-nav-hidden').removeClass('responsive-nav-hidden').addClass('responsive-nav-show');
-    $('.responsive-nav-showButton-show').removeClass('responsive-nav-showButton-show').addClass('responsive-nav-showButton-hidden');
-  });
-
-  $(document).on('click', '.responsive-nav-closeButton',function() {
-    $('.responsive-nav-show').removeClass('responsive-nav-show').addClass('responsive-nav-hidden');
-    $('.responsive-nav-showButton-hidden').removeClass('responsive-nav-showButton-hidden').addClass('responsive-nav-showButton-show');
-  });
-
-  // 데스크탑 크롬 .btn 디버그 
-  var agent = navigator.userAgent.toLowerCase();
-  var filter = "win16|win32|win64|mac|macintel";
-  
-  
-  if( filter.indexOf(navigator.platform.toLowerCase())>0 ){
-      if (agent.indexOf("chrome") != -1) {
-        // alert("PC 크롬 브라우저입니다.");
-        $('.btn').css('position', 'fixed');
-      }
-  }
-  
-</script>
+<script src="js/script.js" type="text/javascript"></script>
 </body>
 </html>

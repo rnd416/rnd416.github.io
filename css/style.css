@@ -169,18 +169,13 @@ strong {
 .card-wrapper {
     display: flex;
     flex-direction: column;
-    width: 350px; 
-    height: 700px; 
-    position: relative; 
+    width: 350px;
+    height: 700px;
     margin: 0 auto;
     margin-top: 11rem;
     text-align: center;
-
 }
 @media (max-width: 767px) {
-    .row.card {
-        /*height: 100vh;*/
-    }
     .card-wrapper {
         width: 300px;
         height: 600px;
@@ -196,7 +191,6 @@ strong {
     background-color: white;
     width: 100%;
     height: 100%;
-    position: absolute; 
     z-index: 2;
     box-shadow: 5px 5px 5px grey;
 
@@ -205,7 +199,6 @@ strong {
      background-color: white; 
      width: 100%;
      height: 100%;
-     position: absolute;
      box-shadow: 5px 5px 5px grey;
 }
 .btn {
@@ -238,9 +231,8 @@ strong {
 .deco {
     font-family: 'Linden Hill', serif;
     line-height: 23px;
-    margin-bottom: 0;
-    margin-top: 5rem;
     font-size: 2rem;
+    margin-top: 18rem;
 }
 
 /*iphone 6*/
@@ -249,7 +241,7 @@ strong {
         margin-bottom: 10px;
     }
     .deco {
-        margin-top: 2rem;
+        margin-top: 12rem;
         font-size: 1.8rem;
     }
 }
@@ -265,6 +257,7 @@ strong {
         font-size: 18px;
     }
     .deco {
+        margin-top: 8rem;
         line-height: 16px;
         font-size: 15px;
     }
@@ -297,28 +290,20 @@ strong {
     padding-bottom: 2rem;
 }
 @media (max-width: 767px) {
-    .gallery {
-        /*flex-direction: column;*/
-        /*width: 100vw;
-        height: 100vh;*/
-    }
     .gallery-item {
         margin-bottom: 3rem;
         overflow: hidden;
         margin-right: 1rem; 
-        /*border-bottom: none;*/
     }
     .gallery-item > img {
         padding-bottom: 0;
         margin-bottom: 2rem;
     }
     .gallery-item-caption {
-        /*visibility: hidden;*/
         font-size: 1.5rem;
     }
 }
-/*2016*/
-/*2017*/
+
 .seventeen-celebrate {
     width: 100vw;
     height: 60vh;
@@ -326,9 +311,8 @@ strong {
     background-size: cover;
     background-attachment: fixed;
     margin-top: 10rem;
-
 }
-/*2018*/
+
 .eighteen-celebrate {
     background-image: url(../images/2018.jpg); 
     width: 100vw; 
@@ -337,7 +321,4 @@ strong {
     z-index: 1;
     background-attachment: fixed;
     text-align: center;
-}
-.row.eighteen {
-
 }
