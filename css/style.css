@@ -267,6 +267,10 @@ strong {
     width: 100%;
     display: flex;
     flex-wrap: nowrap;
+    margin-bottom: 10rem;
+}
+.gallery-big {
+    margin-bottom: 10rem;
 }
 .gallery-item {
     display: flex;
@@ -290,8 +294,10 @@ strong {
     padding-bottom: 2rem;
 }
 @media (max-width: 767px) {
-    .gallery-item {
+    .gallery {
         margin-bottom: 3rem;
+    }
+    .gallery-item {
         overflow: hidden;
         margin-right: 1rem; 
     }
@@ -304,21 +310,13 @@ strong {
     }
 }
 
-.seventeen-celebrate {
-    width: 100vw;
-    height: 60vh;
-    background-image: url(../images/2017.jpeg);
-    background-size: cover;
-    background-attachment: fixed;
-    margin-top: 10rem;
-}
-
-.eighteen-celebrate {
-    background-image: url(../images/2018.jpg); 
-    width: 100vw; 
-    height: 100vh; 
-    background-size: cover;
-    z-index: 1;
-    background-attachment: fixed;
+.centered-text {
+    font-size:  3rem;
+    color: white;
     text-align: center;
+}
+@media (max-width: 768px) {
+    .centered-text {
+        font-size: 1.2rem;
+    }
 }

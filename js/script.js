@@ -38,4 +38,5 @@ if( filter.indexOf(navigator.platform.toLowerCase())>0 ){
 }
 
 window.sr = ScrollReveal();
-sr.reveal('.row');
+sr.reveal('.gallery');
+sr.reveal('.gallery-big');
