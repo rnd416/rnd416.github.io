@@ -1,37 +1,57 @@
 <html>
 	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>flex tutorial</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
 		<style>
-			html,body {
-				height: 100%;
-				width: 100%;
+			body {
+				margin: 0;
+				font-family: 'Montserrat', sans-serif;
 			}
-			.wrapper {
-				display: flex;
-				flex-direction: row;
-				width: 60%;
+			.gallery-item-detail {
+				width: 100vw;
+				height: 100vh;
+				color: white;
 				background-color: black;
-				margin: 0 auto;
-				margin-top: 15rem;
-				flex-wrap: nowrap;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
 			}
-			.item {
-				width: 300px;
-				height: 300px;
-				margin-right: 10px ; 
+			.img-responsive {
+				width: 45rem;
+				height: auto;
+				border-radius: 15px;
+				margin-bottom: 5rem;
 			}
-			.item:last-child {
-				margin-right: 0;
+			.glyphicon-menu-left {
+				position: absolute;
+				top: 5rem;
+				left: 5rem;
+				color: white;
+				font-size: 5rem;
+			}
+			.btn {
+				font-size: 3rem;
+				position: absolute;
+				top: 5rem;
+				right: 5rem;
 			}
 		</style>
 	</head>
 	<body>
-		<div class="wrapper">
-			<div class="item" style="background-color: orange;"></div>
-			<div class="item" style="background-color: blue;"></div>
-			<div class="item" style="background-color: tomato;"></div>
-			<div class="item" style="background-color: aqua;"></div>
-			
+		<div class="gallery-item-detail">
+			<img src="images/zuerichsee.jpg" class="img-responsive">
+			<p class="gallery-item-caption">
+				Zürich Metropolis</br>
+            	1929 • 100×64cm
+			</p>
+			<span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+			<button class="btn btn-default" type="submit">Go to Website</button>
 		</div>
+
 	</body>
 </html>

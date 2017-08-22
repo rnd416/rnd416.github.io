@@ -37,6 +37,19 @@ if( filter.indexOf(navigator.platform.toLowerCase())>0 ){
     }
 }
 
-window.sr = ScrollReveal();
-sr.reveal('.gallery');
-sr.reveal('.gallery-big');
+$(document).ready(function() {
+  itemLength = $('.gallery-item').length;
+  counter = 0;
+  
+  loadGalleryItem();
+});
+
+function loadGalleryItem() {
+  setTimeout(loadGalleryItem,200);
+  if(counter <= itemLength) {
+    $($('.gallery-item').eq(counter)).css({
+      'transform': 'scale(1)'
+    });
+    counter += 1;
+  }
+}
