@@ -10,48 +10,77 @@
 			body {
 				margin: 0;
 				font-family: 'Montserrat', sans-serif;
+				width: 100%;
 			}
-			.gallery-item-detail {
-				width: 100vw;
-				height: 100vh;
-				color: white;
-				background-color: black;
+			.row {
+				width: 80%;
+				margin: 0 auto;
+				background-color: tomato;
+			}
+			.gallery {
+				display: flex;
+				width: 100%;
+				flex-wrap: wrap;
+				justify-content: space-between;
+			}
+			.gallery-item {
 				display: flex;
 				flex-direction: column;
-				justify-content: center;
-				align-items: center;
+				width: 30%;
+				border-bottom: 1px solid white;
 			}
-			.img-responsive {
-				width: 45rem;
-				height: auto;
-				border-radius: 15px;
-				margin-bottom: 5rem;
-			}
-			.glyphicon-menu-left {
-				position: absolute;
-				top: 5rem;
-				left: 5rem;
-				color: white;
-				font-size: 5rem;
-			}
-			.btn {
-				font-size: 3rem;
-				position: absolute;
-				top: 5rem;
-				right: 5rem;
+			.gallery-item:last-child {
+			    margin-right: 0;
 			}
 		</style>
 	</head>
 	<body>
-		<div class="gallery-item-detail">
-			<img src="images/zuerichsee.jpg" class="img-responsive">
-			<p class="gallery-item-caption">
-				Zürich Metropolis</br>
-            	1929 • 100×64cm
-			</p>
-			<span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
-			<button class="btn btn-default" type="submit">Go to Website</button>
-		</div>
+		<div class="row">
+			<div class="gallery">
+				<div class="gallery-item">
+					<img src="images/zuerichsee.jpg" class="img-responsive right-img" id="k_schiff">
+					<div class="gallery-item-footer">
+			            <span class="gallery-item-icon" style="background-image: url(images/zurich.jpg);"></span>
+			            <p class="gallery-item-caption">
+			              Zürich Metropolis</br>
+			              <small>1929 • 100×64cm</small>
+			            </p>
+		          	</div>
+				</div>
 
+				<div class="gallery-item">
+					<img src="images/zuerichsee.jpg" class="img-responsive right-img" id="k_schiff">
+					<div class="gallery-item-footer">
+			            <span class="gallery-item-icon" style="background-image: url(images/zurich.jpg);"></span>
+			            <p class="gallery-item-caption">
+			              Zürich Metropolis</br>
+			              <small>1929 • 100×64cm</small>
+			            </p>
+		          	</div>
+				</div>
+
+				<div class="gallery-item">
+					<img src="images/zuerichsee.jpg" class="img-responsive right-img" id="k_schiff">
+					<div class="gallery-item-footer">
+			            <span class="gallery-item-icon" style="background-image: url(images/zurich.jpg);"></span>
+			            <p class="gallery-item-caption">
+			              Zürich Metropolis</br>
+			              <small>1929 • 100×64cm</small>
+			            </p>
+		          	</div>
+				</div>
+
+				<div class="gallery-item">
+					<img src="images/zuerichsee.jpg" class="img-responsive right-img" id="k_schiff">
+					<div class="gallery-item-footer">
+			            <span class="gallery-item-icon" style="background-image: url(images/zurich.jpg);"></span>
+			            <p class="gallery-item-caption">
+			              Zürich Metropolis</br>
+			              <small>1929 • 100×64cm</small>
+			            </p>
+		          	</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>

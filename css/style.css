@@ -7,42 +7,7 @@ html,body {
 	font-weight: 400;
     background-color: black;
 }
-/*defalut setting*/
-p {
-    margin: 0;
-}
-.large-text {
-    padding-bottom: 10rem; 
-    font-size: 4rem; 
-    color: white; 
-    margin: 0 auto; 
-    width: 100%;
-    margin-top: 10rem;
-}
 
-strong {
-    font-size: 6rem; 
-    font-weight: 600;
-}
-
-
-@media (max-width: 768px) {
-    .large-text {
-        font-size: 2rem;
-        margin-top: 6rem;
-        padding-bottom: 6rem;
-    }
-    strong {
-        font-size: 3rem;
-    }
-}
-.show {
-
-}
-.hidden {
-    position: fixed;
-    visibility: hidden;  
-}
 /*nav*/
 .navbar-example {
     position: fixed; 
@@ -50,7 +15,11 @@ strong {
     left: 1%; 
     z-index: 20;
 }
-
+@media (max-width: 768px) {
+    .navbar-example {
+        visibility: hidden;
+    }
+}
 .nav-pills>li>a {
     color: white;
 }
@@ -141,6 +110,7 @@ strong {
     position: fixed;
     visibility: hidden;
 }
+
 /*main*/
 .container {
     width: 100%;
@@ -158,12 +128,41 @@ strong {
     background-color: black;
     display: flex; 
     flex-direction: column; 
-    justify-content: center; 
-    align-items: center;
+    color: white;
 }
 @media (max-width: 768px) {
     .row {
         width: 80%;
+    }
+}
+.category {
+    margin: 0;
+    margin-top: 8rem;
+    font-size: 10rem; 
+    font-weight: 900;
+}
+.title {
+    margin: 0;
+    font-size: 6rem;
+    font-weight: 600;
+}
+.detail {
+    margin-bottom: 10rem; 
+    margin-top: 5rem;
+    font-size: 4rem; 
+}
+@media (max-width: 768px) {
+    .category {
+        margin-top: 5rem;
+        font-size: 6rem;
+    }
+    .title {
+        font-size: 3rem;
+    }
+    .detail {
+        font-size: 2rem;
+        margin-bottom: 5rem;
+        margin-top: 3rem;
     }
 }
 
@@ -237,22 +236,23 @@ strong {
     font-family: 'Lato', sans-serif;
     margin-bottom: 2rem;
     font-size: 2rem;
+    line-height: 3.5rem;
 }
 
 .deco {
     font-family: 'Linden Hill', serif;
     line-height: 23px;
     font-size: 2rem;
-    margin-top: 18rem;
+    margin-top: 10rem;
 }
 
-/*iphone 6*/
+/*iphone 6,7*/
 @media (max-width: 767px) {
     .profile {
         margin-bottom: 10px;
     }
     .deco {
-        margin-top: 12rem;
+        margin-top: 5rem;
         font-size: 1.8rem;
     }
 }
@@ -263,12 +263,13 @@ strong {
     }
     .job {
         font-size: 15px;
+        line-height: 2rem;
     }
     .btn {
         font-size: 18px;
     }
     .deco {
-        margin-top: 8rem;
+        margin-top: 3.5rem;
         line-height: 16px;
         font-size: 15px;
     }
@@ -277,8 +278,9 @@ strong {
 .gallery {
     width: 100%;
     display: flex;
-    flex-wrap: nowrap;
-    margin-bottom: 10rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 5rem;
 }
 .gallery-big {
     margin-bottom: 10rem;
@@ -286,43 +288,45 @@ strong {
 .gallery-item {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    margin-right: 2rem;
-    border-bottom: 1px solid white;
+    width: 32%;
     transition: all 0.5s;
+    margin-bottom: 5rem;
+    border-bottom: 1px solid white;
     transform: scale(0);
 }
-.gallery-item-detail {
-    width: 100%;
-}
-.gallery-item:last-child {
-    margin-right: 0;
-}
+
 .gallery-item > img {
     width: 100%;
-    height: 100%;
     cursor: url(../images/cursor-1.png), pointer;
 }
+
 .gallery-item-caption {
     color: white;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: left;
-    margin: 2rem 0;
-    font-weight: 400;
+    font-weight: 300;
+    margin: 0;
+    padding-top: 2rem;
 }
+
 @media (max-width: 767px) {
     .gallery {
-        margin-bottom: 3rem;
+        margin-bottom: 0;
+        flex-direction: column;
     }
     .gallery-item {
-        margin-right: 1rem; 
+        margin-right: 0;
+        width: 100%;
+    }
+    .gallery-item:last-child {
+        margin-bottom: 0;
     }
     .gallery-item > img {
         padding-bottom: 0;
     }
     .gallery-item-caption {
-        font-size: 1rem;
-        margin: 1.5rem 0;
+        font-size: 1.5rem;
+        padding-top: 1rem;
     }
 }
 

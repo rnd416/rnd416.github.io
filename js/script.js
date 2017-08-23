@@ -40,8 +40,8 @@ if( filter.indexOf(navigator.platform.toLowerCase())>0 ){
 $(document).ready(function() {
   itemLength = $('.gallery-item').length;
   counter = 0;
-  
   loadGalleryItem();
+  replaceIntroText();
 });
 
 function loadGalleryItem() {
@@ -52,4 +52,32 @@ function loadGalleryItem() {
     });
     counter += 1;
   }
+}
+
+function replaceIntroText() {
+  $('.img-responsive').on('click', function() {
+    var title = $(this).closest('.row').children('.title');
+    var detail = $(this).closest('.row').children('.detail');
+    switch($(this).attr('id')) {
+      case 'zurich' :
+        title.text('BAUMBERGER’S LETTERING');
+        detail.text(
+          `GT Walsheim is inspired by the poster lettering of 
+          Otto Baumberger (1889–1961). He was a Swiss 
+          painter, stage designer, lithographer, and poster 
+          artist who created over 200 posters during his 
+          career. This website introduces the refreshed GT 
+          Walsheim typeface family and highlights 
+          Baumberger’s beautiful poster designs.`);
+        break;
+      case 'bruenig-2' :
+        title.text('bruenig-2');
+        detail.text('bruenig-2');
+        break;
+      case 'k_schiff' :
+        title.text('k_schiff');
+        detail.text('k_schiff');
+        break;
+    }
+  });
 }
