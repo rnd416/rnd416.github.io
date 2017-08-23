@@ -55,9 +55,13 @@ function loadGalleryItem() {
 }
 
 function replaceIntroText() {
-  $('.img-responsive').on('click', function() {
-    var title = $(this).closest('.row').children('.title');
-    var detail = $(this).closest('.row').children('.detail');
+  $('.img-responsive').on('click', function(e) {
+    var gallery = $(this).closest('.gallery');
+    var thisItem = $(this).closest('.gallery-item');
+    var row = gallery.closest('.row');
+    var title = row.children('.title');
+    var detail = row.children('.detail');
+    var rowTop = row.offset().top;
     switch($(this).attr('id')) {
       case 'zurich' :
         title.text('BAUMBERGER’S LETTERING');
@@ -79,5 +83,10 @@ function replaceIntroText() {
         detail.text('k_schiff');
         break;
     }
+    
+    if (matchMedia("screen and (max-width: 767px)").matches) {
+      $(thisItem).prependTo($(gallery));  
+    }
+    $('html, body').animate({scrollTop: rowTop}, 400);
   });
 }
