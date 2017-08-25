@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Linden+Hill:400i');
+
 
 html,body {
     width: 100%;
@@ -290,7 +290,7 @@ html,body {
 }
 
 .deco {
-    font-family: 'Linden Hill', serif;
+    font-family: 'Cardo', serif;
     line-height: 23px;
     font-size: 2rem;
     margin-top: 10rem;
