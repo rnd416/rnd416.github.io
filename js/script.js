@@ -45,17 +45,6 @@ $(document).ready(function() {
   switchColor();
 });
 
-
-function loadGalleryItem() {
-  setTimeout(loadGalleryItem,200);
-  if(counter <= itemLength) {
-    $($('.gallery-item').eq(counter)).css({
-      'transform': 'scale(1)'
-    });
-    counter += 1;
-  }
-}
-
 function replaceIntroText() {
   $('.img-responsive').on('click', function(e) {
     var gallery = $(this).closest('.gallery');
@@ -110,13 +99,6 @@ function switchColor() {
   })
 }
 
-function resizeBorder() {
-  var maxWidth = $('.img-responsive').width();
-  $('.border').css({
-    'width': maxWidth
-  })
-}
-
 window.sr = ScrollReveal();
 sr.reveal('.gallery-item', {
   scale: 0.5,
@@ -125,5 +107,4 @@ sr.reveal('.border', {
   duration: 800,
   distance: '1000px',
   origin: 'left',
-  reset: true
 })
