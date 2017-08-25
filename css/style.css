@@ -167,6 +167,33 @@ html,body {
 }
 
 /*card*/
+.languages {
+    width: 7rem;
+    color: gray;
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: 600;
+    list-style: none;
+    align-items: center;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    top: 6rem;
+    right: 6rem;
+    cursor: pointer;
+}
+.dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: white;
+}
+.languages-item {
+    transition: all 0.5s;
+}
+.languages-item#en {
+    color: white;
+} 
 .row.card {
     display: flex;
     flex-direction: column; 
@@ -174,8 +201,27 @@ html,body {
     background-color: black; 
     width: 100%;
     color: black;
+    align-items: center; 
 }
-
+.sort {
+    display: flex;
+    color: gray;
+    font-size: 2rem;
+    margin-top: 4.5rem;
+    cursor: pointer;
+    align-items: center;
+}
+.sort-item {
+    padding: 0 15px;
+    transition: all 0.5s;
+}
+.sort-item#time {
+    border-right: 1px solid white;
+    color: white;
+}
+.sort-item#category {
+    border-right: 1px solid white;
+}
 .card-wrapper {
     display: flex;
     flex-direction: column;
@@ -186,6 +232,10 @@ html,body {
     text-align: center;
 }
 @media (max-width: 767px) {
+    .languages {
+        top: 5rem;
+        left: 4rem;
+    }
     .card-wrapper {
         width: 300px;
         height: 600px;
@@ -281,6 +331,7 @@ html,body {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 5rem;
+    align-items: flex-end;
 }
 .gallery-big {
     margin-bottom: 10rem;
@@ -291,13 +342,19 @@ html,body {
     width: 32%;
     transition: all 0.5s;
     margin-bottom: 5rem;
-    border-bottom: 1px solid white;
-    transform: scale(0);
+    overflow: hidden;
+    /*transform: scale(0);*/
+}
+.border {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    transition: all 0.5s cubic-bezier(1.000, 0.000, 0.000, 1.000);
 }
 
 .gallery-item > img {
     width: 100%;
-    cursor: url(../images/cursor-1.png), pointer;
+    cursor: pointer;
 }
 
 .gallery-item-caption {
@@ -307,6 +364,7 @@ html,body {
     font-weight: 300;
     margin: 0;
     padding-top: 2rem;
+    padding-bottom: 1rem;
 }
 
 @media (max-width: 767px) {
@@ -326,7 +384,7 @@ html,body {
     }
     .gallery-item-caption {
         font-size: 1.5rem;
-        padding-top: 1rem;
+        padding: 1rem 0;
     }
 }
 

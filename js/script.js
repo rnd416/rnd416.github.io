@@ -40,9 +40,11 @@ if( filter.indexOf(navigator.platform.toLowerCase())>0 ){
 $(document).ready(function() {
   itemLength = $('.gallery-item').length;
   counter = 0;
-  loadGalleryItem();
   replaceIntroText();
+  sortByCategory();
+  switchColor();
 });
+
 
 function loadGalleryItem() {
   setTimeout(loadGalleryItem,200);
@@ -90,3 +92,38 @@ function replaceIntroText() {
     $('html, body').animate({scrollTop: rowTop}, 400);
   });
 }
+
+function sortByCategory() {
+  $('.sortCategory').on('click', function() {
+    
+  });
+}
+
+function switchColor() {
+  $('.languages-item').on('click', function() {
+    $(this).css({'color': 'white'});
+    $('.languages-item').not($(this)).css({'color': 'gray'});
+  });
+  $('.sort-item').on('click', function() {
+    $(this).css({'color': 'white'});
+    $('.sort-item').not($(this)).css({'color': 'gray'});
+  })
+}
+
+function resizeBorder() {
+  var maxWidth = $('.img-responsive').width();
+  $('.border').css({
+    'width': maxWidth
+  })
+}
+
+window.sr = ScrollReveal();
+sr.reveal('.gallery-item', {
+  scale: 0.5,
+});
+sr.reveal('.border', {
+  duration: 800,
+  distance: '1000px',
+  origin: 'left',
+  reset: true
+})
